@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KtrGWjL+YtFKOuTr+PmK6Rv6WByokOVO6eMqKYL83UuyAPzc45VYUDvM5B9uuCeZF5xfGqZFiVgMQvt7pqYbXQ==",
+  "success": true,
+  "projectFilePath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Domain/FC.Codeflix.Catalog.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

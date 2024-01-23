@@ -115,3 +115,4 @@
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.UnitTests/bin/Debug/net8.0/MediatR.Contracts.dll
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.UnitTests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.UnitTests/bin/Debug/net8.0/FluentValidation.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.UnitTests/obj/Debug/net8.0/FC.Codeflix.Catalog.UnitTests.sourcelink.json

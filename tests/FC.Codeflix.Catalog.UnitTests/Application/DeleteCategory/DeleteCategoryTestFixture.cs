@@ -11,7 +11,7 @@ public class DeleteCategoryTestFixture : BaseFixture
     public Mock<ICategoryRepository> GetRepositoryMock() => new();
     public Mock<IUnitOfWork> GetUnitOfWorkMock() => new();
 
-    public Category GetValidCategory()
+public Category GetValidCategory()
         => new(
             GetValidCategoryName(),
             GetValidCategoryDescription()

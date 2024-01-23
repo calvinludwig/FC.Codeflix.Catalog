@@ -13,3 +13,4 @@
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/obj/Debug/net8.0/refint/FC.Codeflix.Catalog.Application.dll
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/obj/Debug/net8.0/FC.Codeflix.Catalog.Application.pdb
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/obj/Debug/net8.0/ref/FC.Codeflix.Catalog.Application.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/obj/Debug/net8.0/FC.Codeflix.Catalog.Application.sourcelink.json

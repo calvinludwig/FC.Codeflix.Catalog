@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OfEIAcMO5HhppDxNUMi+4f7synPZ7L3SNLCzaO5DMm71B7uxp6WnC1lz9R4hRwljcom1+AOFDVuqowVP7yM05A==",
+  "dgSpecHash": "eatipHrWenqejCCPzzAOJPUR5QDUQ4KrYMhm07tPa5PubjhjdzPDelAlz+CrQwcjn8sXH6T87VlRrOJJNKT+0A==",
   "success": true,
   "projectFilePath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.UnitTests/FC.Codeflix.Catalog.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -104,7 +104,7 @@
     "/home/ludwig/.nuget/packages/xunit.extensibility.core/2.4.2/xunit.extensibility.core.2.4.2.nupkg.sha512",
     "/home/ludwig/.nuget/packages/xunit.extensibility.execution/2.4.2/xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "/home/ludwig/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
+    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

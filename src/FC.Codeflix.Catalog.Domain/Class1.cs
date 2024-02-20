@@ -1,6 +1,3 @@
 ﻿namespace FC.Codeflix.Catalog.Domain;
 
-public class Class1
-{
-
-}
+public class Class1 { }

@@ -53,7 +53,9 @@ public class CategoryTest(CategoryTestFixture fixture)
     public void ItShouldThrowWhenNameIsEmptyOnInstantiate(string? name)
     {
         Action action = () => _ = new DomainEntity.Category(name!, "Category Description");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Name should not be null or empty");
     }
 
@@ -62,17 +64,21 @@ public class CategoryTest(CategoryTestFixture fixture)
     public void ItShouldThrowWhenDescriptionIsNullOnInstantiate()
     {
         Action action = () => _ = new DomainEntity.Category("Category Name", null!);
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Description should not be null");
     }
 
     [Theory(DisplayName = nameof(ItShouldThrowWhenNameHasLessThan3CharactersOnInstantiate))]
     [Trait("Domain", "Category - Aggregates")]
-    [MemberData(nameof(GetNamesWithLessThan3Characters), parameters: 10)]
+    [MemberData(nameof(GetNamesWithLessThan3Characters), 10)]
     public void ItShouldThrowWhenNameHasLessThan3CharactersOnInstantiate(string invalidName)
     {
         Action action = () => _ = new DomainEntity.Category(invalidName, "Category Description");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Name should have at least 3 characters");
     }
 
@@ -92,17 +98,23 @@ public class CategoryTest(CategoryTestFixture fixture)
     {
         var invalidName = new string('a', 256);
         Action action = () => _ = new DomainEntity.Category(invalidName, "Category Description");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Name should have at most 255 characters");
     }
 
-    [Fact(DisplayName = nameof(ItShouldThrowWhenDescriptionHasMoreThan10_000CharactersOnInstantiate))]
+    [Fact(
+        DisplayName = nameof(ItShouldThrowWhenDescriptionHasMoreThan10_000CharactersOnInstantiate)
+    )]
     [Trait("Domain", "Category - Aggregates")]
     public void ItShouldThrowWhenDescriptionHasMoreThan10_000CharactersOnInstantiate()
     {
         var invalidDescription = new string('a', 10_001);
         Action action = () => _ = new DomainEntity.Category("Category Name", invalidDescription);
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Description should have at most 10000 characters");
     }
 
@@ -130,7 +142,11 @@ public class CategoryTest(CategoryTestFixture fixture)
     public void ItShouldBeAbleToUpdateTheCategory()
     {
         var category = fixture.GetValidCategory();
-        var newValues = new { Name = "New Category Name", Description = "New Category Description" };
+        var newValues = new
+        {
+            Name = "New Category Name",
+            Description = "New Category Description"
+        };
         category.Update(newValues.Name, newValues.Description);
         category.Name.Should().Be(newValues.Name);
         category.Description.Should().Be(newValues.Description);
@@ -157,7 +173,9 @@ public class CategoryTest(CategoryTestFixture fixture)
     {
         var category = fixture.GetValidCategory();
         var action = () => category.Update(invalidName!);
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Name should not be null or empty");
     }
 
@@ -169,7 +187,9 @@ public class CategoryTest(CategoryTestFixture fixture)
     {
         var category = fixture.GetValidCategory();
         var action = () => category.Update(invalidName);
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Name should have at least 3 characters");
     }
 
@@ -180,8 +200,10 @@ public class CategoryTest(CategoryTestFixture fixture)
         var invalidName = fixture.Faker.Lorem.Letter(256);
         var category = fixture.GetValidCategory();
         var action = () => category.Update(invalidName!);
-        action.Should().Throw<EntityValidationException>()
-            .WithMessage($"Name should have at most 255 characters");
+        action
+            .Should()
+            .Throw<EntityValidationException>()
+            .WithMessage("Name should have at most 255 characters");
     }
 
     [Fact(DisplayName = nameof(ItShouldThrowWhenDescriptionIsMoreThan10_000CharactersOnUpdate))]
@@ -191,7 +213,9 @@ public class CategoryTest(CategoryTestFixture fixture)
         var invalidDescription = fixture.Faker.Lorem.Letter(10_001);
         var category = fixture.GetValidCategory();
         var action = () => category.Update("Category Name", invalidDescription!);
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("Description should have at most 10000 characters");
     }
 }

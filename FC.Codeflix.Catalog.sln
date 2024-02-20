@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Application", "src\FC.Codeflix.Catalog.Application\FC.Codeflix.Catalog.Application.csproj", "{AA973C0C-E122-4594-901C-86A305D25F5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.IntegrationTests", "tests\FC.Codeflix.Catalog.IntegrationTests\FC.Codeflix.Catalog.IntegrationTests.csproj", "{17E895CD-16B2-4455-BAB7-D95694423AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Infra.Data.EF", "src\FC.Codeflix.Catalog.Infra.Data.EF\FC.Codeflix.Catalog.Infra.Data.EF.csproj", "{9BA1961D-C0EF-41A8-BAF9-24F294776077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +38,20 @@ Global
 		{AA973C0C-E122-4594-901C-86A305D25F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA973C0C-E122-4594-901C-86A305D25F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA973C0C-E122-4594-901C-86A305D25F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E895CD-16B2-4455-BAB7-D95694423AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E895CD-16B2-4455-BAB7-D95694423AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E895CD-16B2-4455-BAB7-D95694423AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E895CD-16B2-4455-BAB7-D95694423AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{72447A07-1FFC-4DDD-8C9C-927E6B610EDE} = {8B65DDF8-15AF-4D8B-976D-C454F644EB4B}
 		{1FC99E82-2003-44E9-AAB1-50FD93E90D73} = {BDE9809D-37AC-4E2A-BA98-C60ABC6C20C8}
 		{AA973C0C-E122-4594-901C-86A305D25F5C} = {BDE9809D-37AC-4E2A-BA98-C60ABC6C20C8}
+		{17E895CD-16B2-4455-BAB7-D95694423AAD} = {8B65DDF8-15AF-4D8B-976D-C454F644EB4B}
+		{9BA1961D-C0EF-41A8-BAF9-24F294776077} = {BDE9809D-37AC-4E2A-BA98-C60ABC6C20C8}
 	EndGlobalSection
 EndGlobal

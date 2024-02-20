@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RupAzFzozA+zUZhjyD9YxHvBTDzidSf0ypJr9BQkrtBs3N1ZJaVB2zee6zdLJ/SykVf2YOdvWF+mIrCrd8RMZg==",
+  "dgSpecHash": "P5ABc91BukDUm9jYE4cqoqNyiifycNMNm+zWfKpEyBIzTnKm8tUvTGjH7B+lUbihkvyrWDPTilTc28OnzVfy/w==",
   "success": true,
   "projectFilePath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/FC.Codeflix.Catalog.Application.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "/home/ludwig/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
     "/home/ludwig/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/ludwig/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
+    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

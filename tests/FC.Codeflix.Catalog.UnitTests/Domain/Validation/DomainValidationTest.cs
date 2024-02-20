@@ -7,7 +7,7 @@ namespace FC.Codeflix.Catalog.UnitTests.Domain.Validation;
 
 public class DomainValidationTest
 {
-    private Faker Faker { get; set; } = new Faker();
+    private Faker Faker { get; } = new();
 
     [Fact(DisplayName = nameof(NotNullOk))]
     [Trait("Domain", "Domain Validation - Validation")]
@@ -24,7 +24,9 @@ public class DomainValidationTest
     {
         string? value = null;
         var action = () => DomainValidation.NotNull(value!, "FieldName");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("FieldName should not be null");
     }
 
@@ -36,7 +38,9 @@ public class DomainValidationTest
     public void NotNullOrEmptyThrowWhenEmpty(string? target)
     {
         var action = () => DomainValidation.NotNullOrEmpty(target!, "FieldName");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage("FieldName should not be null or empty");
     }
 
@@ -46,7 +50,9 @@ public class DomainValidationTest
     public void MinLengthThrowWhenLess(string target, int minLength)
     {
         var action = () => DomainValidation.MinLength(target, minLength, "FieldName");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage($"FieldName should have at least {minLength} characters");
     }
 
@@ -65,7 +71,9 @@ public class DomainValidationTest
     public void MaxLengthThrowWhenGreater(string target, int minLength)
     {
         var action = () => DomainValidation.MaxLength(target, minLength, "FieldName");
-        action.Should().Throw<EntityValidationException>()
+        action
+            .Should()
+            .Throw<EntityValidationException>()
             .WithMessage($"FieldName should have at most {minLength} characters");
     }
 
@@ -82,10 +90,10 @@ public class DomainValidationTest
     {
         yield return ["ab", 3];
         var faker = new Faker();
-        for (var i = 0; i < (numberOfValues - 1); i++)
+        for (var i = 0; i < numberOfValues - 1; i++)
         {
             var value = faker.Commerce.ProductName();
-            var minLength = value.Length + (new Random()).Next(1, 20);
+            var minLength = value.Length + new Random().Next(1, 20);
             yield return [value, minLength];
         }
     }
@@ -94,10 +102,10 @@ public class DomainValidationTest
     {
         yield return ["abcd", 3];
         var faker = new Faker();
-        for (var i = 0; i < (numberOfValues - 1); i++)
+        for (var i = 0; i < numberOfValues - 1; i++)
         {
             var value = faker.Commerce.ProductName();
-            var length = value.Length - (new Random()).Next(1, 5);
+            var length = value.Length - new Random().Next(1, 5);
             if (length < 0)
                 length = 0;
             yield return [value, length];

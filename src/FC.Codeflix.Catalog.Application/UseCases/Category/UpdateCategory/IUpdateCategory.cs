@@ -3,4 +3,4 @@ using MediatR;
 
 namespace FC.Codeflix.Catalog.Application.UseCases.Category.UpdateCategory;
 
-public interface IUpdateCategory: IRequestHandler<UpdateCategoryInput, CategoryOutput>;
+public interface IUpdateCategory : IRequestHandler<UpdateCategoryInput, CategoryOutput>;

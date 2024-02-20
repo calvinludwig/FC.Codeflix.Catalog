@@ -9,9 +9,7 @@ public class CategoryTestFixture : BaseFixture
     {
         var name = "";
         while (name.Length is < 3 or > 255)
-        {
             name = Faker.Commerce.Categories(1)[0];
-        }
 
         return name;
     }
@@ -20,18 +18,15 @@ public class CategoryTestFixture : BaseFixture
     {
         var description = "";
         while (description.Length > 10_000 || description == "")
-        {
             description = Faker.Commerce.ProductDescription();
-        }
 
         return description;
     }
 
     public DomainEntity.Category GetValidCategory()
-        => new(
-            GetValidCategoryName(),
-            GetValidCategoryDescription()
-        );
+    {
+        return new DomainEntity.Category(GetValidCategoryName(), GetValidCategoryDescription());
+    }
 }
 
 [CollectionDefinition(nameof(CategoryTestFixture))]

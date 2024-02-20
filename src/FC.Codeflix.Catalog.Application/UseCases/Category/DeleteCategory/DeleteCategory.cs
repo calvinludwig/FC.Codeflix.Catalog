@@ -3,7 +3,8 @@ using FC.Codeflix.Catalog.Domain.Repository;
 
 namespace FC.Codeflix.Catalog.Application.UseCases.Category.DeleteCategory;
 
-public class DeleteCategory(ICategoryRepository categoryRepository, IUnitOfWork unitOfWork): IDeleteCategory
+public class DeleteCategory(ICategoryRepository categoryRepository, IUnitOfWork unitOfWork)
+    : IDeleteCategory
 {
     public async Task Handle(DeleteCategoryInput request, CancellationToken cancellationToken)
     {

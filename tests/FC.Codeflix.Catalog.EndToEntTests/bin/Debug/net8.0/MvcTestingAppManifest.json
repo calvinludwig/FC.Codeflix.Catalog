@@ -1,0 +1,5 @@
+{
+  "FC.Codeflix.Catalog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/ludwig\/code\/fullcycle\/dotnet\/FC.Codeflix.Catalog\/src\/FC.Codeflix.Catalog.Application",
+  "FC.Codeflix.Catalog.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/ludwig\/code\/fullcycle\/dotnet\/FC.Codeflix.Catalog\/src\/FC.Codeflix.Catalog.Domain",
+  "FC.Codeflix.Catalog.Infra.Data.EF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/ludwig\/code\/fullcycle\/dotnet\/FC.Codeflix.Catalog\/src\/FC.Codeflix.Catalog.Infra.Data.EF"
+}

@@ -17,13 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Integra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.Infra.Data.EF", "src\FC.Codeflix.Catalog.Infra.Data.EF\FC.Codeflix.Catalog.Infra.Data.EF.csproj", "{9BA1961D-C0EF-41A8-BAF9-24F294776077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.Codeflix.Catalog.EndToEntTests", "tests\FC.Codeflix.Catalog.EndToEntTests\FC.Codeflix.Catalog.EndToEntTests.csproj", "{7A968D8C-F8D8-4D18-B0A2-190E5A74AD56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{72447A07-1FFC-4DDD-8C9C-927E6B610EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,6 +45,13 @@ Global
 		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA1961D-C0EF-41A8-BAF9-24F294776077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A968D8C-F8D8-4D18-B0A2-190E5A74AD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A968D8C-F8D8-4D18-B0A2-190E5A74AD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A968D8C-F8D8-4D18-B0A2-190E5A74AD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A968D8C-F8D8-4D18-B0A2-190E5A74AD56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{72447A07-1FFC-4DDD-8C9C-927E6B610EDE} = {8B65DDF8-15AF-4D8B-976D-C454F644EB4B}
@@ -53,5 +59,6 @@ Global
 		{AA973C0C-E122-4594-901C-86A305D25F5C} = {BDE9809D-37AC-4E2A-BA98-C60ABC6C20C8}
 		{17E895CD-16B2-4455-BAB7-D95694423AAD} = {8B65DDF8-15AF-4D8B-976D-C454F644EB4B}
 		{9BA1961D-C0EF-41A8-BAF9-24F294776077} = {BDE9809D-37AC-4E2A-BA98-C60ABC6C20C8}
+		{7A968D8C-F8D8-4D18-B0A2-190E5A74AD56} = {8B65DDF8-15AF-4D8B-976D-C454F644EB4B}
 	EndGlobalSection
 EndGlobal

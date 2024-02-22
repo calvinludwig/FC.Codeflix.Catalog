@@ -123,3 +123,4 @@
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.IntegrationTests/obj/Debug/net8.0/FC.Codeflix.Catalog.IntegrationTests.pdb
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.IntegrationTests/obj/Debug/net8.0/FC.Codeflix.Catalog.IntegrationTests.genruntimeconfig.cache
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.IntegrationTests/obj/Debug/net8.0/ref/FC.Codeflix.Catalog.IntegrationTests.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.IntegrationTests/bin/Debug/net8.0/xunit.runner.json

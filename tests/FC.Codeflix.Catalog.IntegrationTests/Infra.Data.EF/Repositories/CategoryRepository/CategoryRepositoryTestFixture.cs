@@ -8,20 +8,6 @@ namespace FC.Codeflix.Catalog.IntegrationTests.Infra.Data.EF.Repositories.Catego
 
 public class CategoryRepositoryTestFixture : BaseFixture
 {
-    public CodeflixCatalogDbContext CreateDbContext(bool preserveData = false)
-    {
-        var context = new CodeflixCatalogDbContext(
-            new DbContextOptionsBuilder<CodeflixCatalogDbContext>()
-                .UseInMemoryDatabase("integration-tests-db")
-                .Options
-        );
-
-        if (!preserveData)
-            context.Database.EnsureDeleted();
-
-        return context;
-    }
-
     public Category GetExampleCategory() =>
         new(GetValidCategoryName(), GetValidCategoryDescription(), GetRandomBool());
 

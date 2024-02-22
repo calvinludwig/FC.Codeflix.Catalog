@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FC.Codeflix.Catalog.Infra.Data.EF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0cb531f73fa3e15e59b55e7561e4653ed46953b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+972583560650f5ddf2929c6d1fdae97a806f700f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FC.Codeflix.Catalog.Infra.Data.EF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FC.Codeflix.Catalog.Infra.Data.EF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

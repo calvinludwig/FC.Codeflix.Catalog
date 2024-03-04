@@ -4,7 +4,7 @@ using FluentAssertions;
 namespace FC.Codeflix.Catalog.UnitTests.Application.Category.GetCategory;
 
 [Collection(nameof(GetCategoryTestFixture))]
-public class GetCategoryInputValidatorTest(GetCategoryTestFixture fixture)
+public class GetCategoryInputValidatorTest()
 {
     [Fact(DisplayName = nameof(ItShouldPassAValidInput))]
     [Trait("Application", "GetCategoryInputValidation - Use Case")]

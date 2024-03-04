@@ -18,17 +18,13 @@ public class BaseFixture
         ApiClient = new ApiClient(HttpClient);
     }
 
-    public CodeflixCatalogDbContext CreateDbContext(bool preserveData = false)
+    public CodeflixCatalogDbContext CreateDbContext()
     {
         var context = new CodeflixCatalogDbContext(
             new DbContextOptionsBuilder<CodeflixCatalogDbContext>()
-                .UseInMemoryDatabase("integration-tests-db")
+                .UseInMemoryDatabase("InMemory-DSV-Database")
                 .Options
         );
-
-        if (!preserveData)
-            context.Database.EnsureDeleted();
-
         return context;
     }
 }

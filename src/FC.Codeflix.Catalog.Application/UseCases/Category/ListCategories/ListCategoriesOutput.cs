@@ -8,5 +8,4 @@ public class ListCategoriesOutput(
     int perPage,
     int total,
     IReadOnlyList<CategoryOutput> items
-) : PaginatedListOutput<CategoryOutput>(page, perPage, total, items)
-{ }
+) : PaginatedListOutput<CategoryOutput>(page, perPage, total, items) { }

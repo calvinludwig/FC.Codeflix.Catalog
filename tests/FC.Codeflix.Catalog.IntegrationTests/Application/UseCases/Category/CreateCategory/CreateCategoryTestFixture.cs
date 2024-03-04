@@ -8,11 +8,7 @@ public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
     public CreateCategoryInput GetInput()
     {
         var category = GetExampleCategory();
-        return new CreateCategoryInput(
-            category.Name,
-            category.Description,
-            category.IsActive
-        );
+        return new CreateCategoryInput(category.Name, category.Description, category.IsActive);
     }
 
     public CreateCategoryInput GetInvalidInputTooLongName()
@@ -37,7 +33,8 @@ public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
         var invalidInputTooLongDescription = GetInput();
         var tooLongDescriptionForCategory = Faker.Commerce.ProductDescription();
         while (tooLongDescriptionForCategory.Length <= 10_000)
-            tooLongDescriptionForCategory = $"{tooLongDescriptionForCategory} {Faker.Commerce.ProductDescription()}";
+            tooLongDescriptionForCategory =
+                $"{tooLongDescriptionForCategory} {Faker.Commerce.ProductDescription()}";
         invalidInputTooLongDescription.Description = tooLongDescriptionForCategory;
         return invalidInputTooLongDescription;
     }
@@ -45,8 +42,7 @@ public class CreateCategoryTestFixture : CategoryUseCasesBaseFixture
     public CreateCategoryInput GetInvalidInputShortName()
     {
         var invalidInputShortName = GetInput();
-        invalidInputShortName.Name =
-            invalidInputShortName.Name.Substring(0, 2);
+        invalidInputShortName.Name = invalidInputShortName.Name.Substring(0, 2);
         return invalidInputShortName;
     }
 }

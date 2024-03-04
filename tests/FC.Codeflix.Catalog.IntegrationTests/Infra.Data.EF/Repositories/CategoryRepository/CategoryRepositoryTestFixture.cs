@@ -24,7 +24,11 @@ public class CategoryRepositoryTestFixture : BaseFixture
             })
             .ToList();
 
-    public List<Category> CloneCategoriesListOrdered(List<Category> categoriesList, string orderBy, SearchOrder order)
+    public List<Category> CloneCategoriesListOrdered(
+        List<Category> categoriesList,
+        string orderBy,
+        SearchOrder order
+    )
     {
         var listClone = new List<Category>(categoriesList);
         var orderedEnumerable = (orderBy.ToLower(), order) switch

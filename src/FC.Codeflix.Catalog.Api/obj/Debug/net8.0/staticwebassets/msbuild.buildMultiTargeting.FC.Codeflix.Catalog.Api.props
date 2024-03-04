@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/FC.Codeflix.Catalog.Api.props" />
+</Project>

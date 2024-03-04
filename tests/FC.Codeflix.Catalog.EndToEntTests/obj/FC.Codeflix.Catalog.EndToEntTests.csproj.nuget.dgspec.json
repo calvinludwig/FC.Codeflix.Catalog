@@ -4,6 +4,93 @@
     "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/FC.Codeflix.Catalog.EndToEntTests.csproj": {}
   },
   "projects": {
+    "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Api/FC.Codeflix.Catalog.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Api/FC.Codeflix.Catalog.Api.csproj",
+        "projectName": "FC.Codeflix.Catalog.Api",
+        "projectPath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Api/FC.Codeflix.Catalog.Api.csproj",
+        "packagesPath": "/home/ludwig/.nuget/packages/",
+        "outputPath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ludwig/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/FC.Codeflix.Catalog.Application.csproj": {
+                "projectPath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/FC.Codeflix.Catalog.Application.csproj"
+              },
+              "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Infra.Data.EF/FC.Codeflix.Catalog.Infra.Data.EF.csproj": {
+                "projectPath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Infra.Data.EF/FC.Codeflix.Catalog.Infra.Data.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.2, 8.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/FC.Codeflix.Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -65,7 +152,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.1, 8.0.1]"
+              "version": "[8.0.2, 8.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -73,7 +160,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -124,7 +211,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.1, 8.0.1]"
+              "version": "[8.0.2, 8.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -132,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -196,7 +283,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.1, 8.0.1]"
+              "version": "[8.0.2, 8.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -204,7 +291,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -230,6 +317,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Api/FC.Codeflix.Catalog.Api.csproj": {
+                "projectPath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Api/FC.Codeflix.Catalog.Api.csproj"
+              },
               "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/FC.Codeflix.Catalog.Application.csproj": {
                 "projectPath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Application/FC.Codeflix.Catalog.Application.csproj"
               },
@@ -303,7 +393,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.1, 8.0.1]"
+              "version": "[8.0.2, 8.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -311,7 +401,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

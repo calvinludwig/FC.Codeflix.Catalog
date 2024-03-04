@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3BYhV2+esM1i2oGYqMmu+AxPa4z9WezENvYo4qVFwmLE+8VAuFod7mEzs7QgLis1XBY691LgI6so6M7SuYVXZg==",
+  "dgSpecHash": "fXxaIXubddr4XJiVwn2fNnLeihyROv0qTINZmEoDUkwsLVExmuUwxziivfUSuOeb1L5GNrrK6flPHVM0RPX3qQ==",
   "success": true,
   "projectFilePath": "/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/src/FC.Codeflix.Catalog.Infra.Data.EF/FC.Codeflix.Catalog.Infra.Data.EF.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,7 @@
     "/home/ludwig/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/home/ludwig/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/home/ludwig/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
+    "/home/ludwig/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.2/microsoft.aspnetcore.app.ref.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

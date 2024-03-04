@@ -6,7 +6,7 @@ namespace FC.Codeflix.Catalog.IntegrationTests;
 public class UnitOfWorkTestFixture : BaseFixture
 {
     public Category GetExampleCategory() =>
-           new(GetValidCategoryName(), GetValidCategoryDescription(), GetRandomBool());
+        new(GetValidCategoryName(), GetValidCategoryDescription(), GetRandomBool());
 
     public List<Category> GetExampleCategoriesList(int length = 10) =>
         Enumerable.Range(1, length).Select(_ => GetExampleCategory()).ToList();

@@ -1,4 +1,4 @@
-@FC.Codeflix.Catalog.Api_HostAddress = http://localhost:5215
+@FC.Codeflix.Catalog.Api_HostAddress = http://localhost:5290
 
 GET {{FC.Codeflix.Catalog.Api_HostAddress}}/weatherforecast/
 Accept: application/json

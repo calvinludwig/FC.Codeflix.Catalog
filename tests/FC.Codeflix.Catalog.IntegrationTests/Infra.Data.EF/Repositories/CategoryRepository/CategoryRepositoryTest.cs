@@ -267,10 +267,7 @@ public class CategoryRepositoryTest
     [InlineData("id", "desc")]
     [InlineData("createdAt", "asc")]
     [InlineData("createdAt", "desc")]
-    public async Task ShouldBeAbleToSearchAndListOrdered(
-        string orderBy,
-        string order
-    )
+    public async Task ShouldBeAbleToSearchAndListOrdered(string orderBy, string order)
     {
         var dbContext = _fixture.CreateDbContext();
         var exampleCategoriesList = _fixture.GetExampleCategoriesList(10);
@@ -284,7 +281,11 @@ public class CategoryRepositoryTest
 
         var output = await categoryRepository.Search(searchInput, CancellationToken.None);
 
-        var expectedOrderedList = _fixture.CloneCategoriesListOrdered(exampleCategoriesList, orderBy, searchOrder);
+        var expectedOrderedList = _fixture.CloneCategoriesListOrdered(
+            exampleCategoriesList,
+            orderBy,
+            searchOrder
+        );
 
         output.Should().NotBeNull();
         output.Items.Should().NotBeNull();

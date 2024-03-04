@@ -421,3 +421,15 @@
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/obj/Debug/net8.0/FC.Codeflix.Catalog.EndToEntTests.pdb
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/obj/Debug/net8.0/FC.Codeflix.Catalog.EndToEntTests.genruntimeconfig.cache
 /home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/obj/Debug/net8.0/ref/FC.Codeflix.Catalog.EndToEntTests.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/FC.Codeflix.Catalog.Api.deps.json
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/FC.Codeflix.Catalog.Api.runtimeconfig.json
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/appsettings.Development.json
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/appsettings.json
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/FC.Codeflix.Catalog.Api
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/FC.Codeflix.Catalog.Api.dll
+/home/ludwig/code/fullcycle/dotnet/FC.Codeflix.Catalog/tests/FC.Codeflix.Catalog.EndToEntTests/bin/Debug/net8.0/FC.Codeflix.Catalog.Api.pdb

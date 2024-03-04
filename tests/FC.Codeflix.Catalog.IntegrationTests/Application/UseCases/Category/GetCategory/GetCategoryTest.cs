@@ -44,10 +44,10 @@ public class GetCategoryTest(GetCategoryTestFixture fixture)
         var input = new UseCase.GetCategoryInput(Guid.NewGuid());
         var useCase = new UseCase.GetCategory(repository);
 
-        var task = async ()
-            => await useCase.Handle(input, CancellationToken.None);
+        var task = async () => await useCase.Handle(input, CancellationToken.None);
 
-        await task.Should().ThrowAsync<NotFoundException>()
+        await task.Should()
+            .ThrowAsync<NotFoundException>()
             .WithMessage($"Category '{input.Id}' not found.");
     }
 }

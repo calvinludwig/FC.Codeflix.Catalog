@@ -5,13 +5,10 @@ namespace FC.Codeflix.Catalog.EndToEntTests.Api.Category.CreateCategory;
 
 public class CreateCategoryApiTestFixture : CategoryBaseFixture
 {
-	public CreateCategoryInput GetExampleInput()
-		=> new(
-			GetValidCategoryName(),
-			GetValidCategoryDescription(),
-			getRandomBoolean()
-		);
+    public CreateCategoryInput GetExampleInput() =>
+        new(GetValidCategoryName(), GetValidCategoryDescription(), GetRandomBoolean());
 }
 
 [CollectionDefinition(nameof(CreateCategoryApiTestFixture))]
-public class CreateCategoryApiTestFixtureCollection : ICollectionFixture<CreateCategoryApiTestFixture>;
+public class CreateCategoryApiTestFixtureCollection
+    : ICollectionFixture<CreateCategoryApiTestFixture>;

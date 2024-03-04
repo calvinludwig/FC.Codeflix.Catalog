@@ -8,23 +8,24 @@ using Microsoft.Extensions.Options;
 namespace FC.Codeflix.Catalog.EndToEntTests;
 
 public class CustomWebApplicationFactory<TStartup> : WebApplicationFactory<TStartup>
-where TStartup : class
+    where TStartup : class
 {
-	protected override void ConfigureWebHost(IWebHostBuilder builder)
-	{
-		builder.ConfigureServices(services =>
-		{
-			var dbOptions = services.FirstOrDefault(x =>
-				x.ServiceType == typeof(DbContextOptions<CodeflixCatalogDbContext>)
-			);
-			if (dbOptions is not null) {
-				services.Remove(dbOptions);
-				services.AddDbContext<CodeflixCatalogDbContext>(options =>
-				{
-					options.UseInMemoryDatabase("end2end-tests-db");
-				});
-			}
-		});
-		base.ConfigureWebHost(builder);
-	}
+    protected override void ConfigureWebHost(IWebHostBuilder builder)
+    {
+        builder.ConfigureServices(services =>
+        {
+            var dbOptions = services.FirstOrDefault(x =>
+                x.ServiceType == typeof(DbContextOptions<CodeflixCatalogDbContext>)
+            );
+            if (dbOptions is not null)
+            {
+                services.Remove(dbOptions);
+                services.AddDbContext<CodeflixCatalogDbContext>(options =>
+                {
+                    options.UseInMemoryDatabase("InMemory-DSV-Database");
+                });
+            }
+        });
+        base.ConfigureWebHost(builder);
+    }
 }

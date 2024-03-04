@@ -17,15 +17,12 @@ public class CreateCategoryTest(CreateCategoryTestFixture fixture)
         var dbContext = _fixture.CreateDbContext();
         var repository = new CategoryRepository(dbContext);
         var unitOfWork = new UnitOfWork(dbContext);
-        var useCase = new ApplicationUseCases.CreateCategory(
-            repository, unitOfWork
-        );
+        var useCase = new ApplicationUseCases.CreateCategory(repository, unitOfWork);
         var input = _fixture.GetInput();
 
         var output = await useCase.Handle(input, CancellationToken.None);
 
-        var dbCategory = await (_fixture.CreateDbContext(true))
-            .Categories.FindAsync(output.Id);
+        var dbCategory = await (_fixture.CreateDbContext(true)).Categories.FindAsync(output.Id);
         dbCategory.Should().NotBeNull();
         dbCategory!.Name.Should().Be(input.Name);
         dbCategory.Description.Should().Be(input.Description);

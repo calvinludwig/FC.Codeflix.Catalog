@@ -17,25 +17,17 @@ public class CategoryUseCasesBaseFixture : BaseFixture
 
     public string GetValidCategoryDescription()
     {
-        var categoryDescription =
-            Faker.Commerce.ProductDescription();
+        var categoryDescription = Faker.Commerce.ProductDescription();
         if (categoryDescription.Length > 10_000)
-            categoryDescription =
-                categoryDescription[..10_000];
+            categoryDescription = categoryDescription[..10_000];
         return categoryDescription;
     }
 
-    public bool getRandomBoolean()
-        => new Random().NextDouble() < 0.5;
+    public bool getRandomBoolean() => new Random().NextDouble() < 0.5;
 
-    public DomainEntity.Category GetExampleCategory()
-        => new(
-            GetValidCategoryName(),
-            GetValidCategoryDescription(),
-            getRandomBoolean()
-        );
+    public DomainEntity.Category GetExampleCategory() =>
+        new(GetValidCategoryName(), GetValidCategoryDescription(), getRandomBoolean());
 
-    public List<DomainEntity.Category> GetExampleCategoriesList(int length = 10)
-        => Enumerable.Range(1, length)
-            .Select(_ => GetExampleCategory()).ToList();
+    public List<DomainEntity.Category> GetExampleCategoriesList(int length = 10) =>
+        Enumerable.Range(1, length).Select(_ => GetExampleCategory()).ToList();
 }
